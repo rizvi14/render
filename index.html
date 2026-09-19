@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mo Rizvi — Analytics Engineer</title>
+<meta name="description" content="Mohammed Ali Rizvi — analytics engineer in Austin, TX. Turning hundreds of bespoke queries into tested data models people trust. Nova Credit, Oracle, Stripe.">
+<meta property="og:title" content="Mo Rizvi — Analytics Engineer">
+<meta property="og:description" content="I turn hundreds of bespoke queries into tested data models people trust. Nova Credit · Oracle · Stripe.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M7 16h8M15 16l6-7M15 16l6 7' stroke='%238290f3' stroke-width='2' fill='none'/%3E%3Ccircle cx='7' cy='16' r='3.5' fill='%238290f3'/%3E%3Ccircle cx='23' cy='8' r='3.5' fill='%238290f3'/%3E%3Ccircle cx='23' cy='24' r='3.5' fill='%238290f3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+</script>
+</head>
+<body>
+
+<canvas id="dag" aria-hidden="true"></canvas>
+
+<header id="hero" class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow mono">Mohammed Ali Rizvi · Austin, TX</p>
+    <h1>I turn hundreds of bespoke queries into tested data models people trust.</h1>
+    <p class="lede">Analytics engineer at <strong>Nova Credit</strong>. Previously <strong>Oracle</strong> and <strong>Stripe</strong>. Thirteen years of building the model, testing it, and shipping it to the people who make decisions.</p>
+    <nav class="links" aria-label="Contact">
+      <a href="mailto:mo.rizvi@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/rizvi14" rel="me noopener" target="_blank">LinkedIn</a>
+      <a href="https://github.com/rizvi14" rel="me noopener" target="_blank">GitHub</a>
+    </nav>
+    <p class="lineage mono" aria-hidden="true"><span>sources</span><i></i><span>staging</span><i></i><span>marts</span><i></i><span>dashboards</span></p>
+  </div>
+  <a class="scroll-cue" href="#thread" aria-label="Scroll to content"><span></span></a>
+</header>
+
+<main>
+
+<section id="thread" class="section reveal">
+  <h2 class="section-title"><span class="mono num">01</span>The thread</h2>
+  <p class="section-intro">Every role has had the same shape: a business asking hard questions, a pile of one-off SQL, and no shared definitions. The work is always the same three moves.</p>
+  <div class="pillars">
+    <article class="pillar">
+      <h3>Model</h3>
+      <p>At Stripe I led the 2025 GTM territory model refactor across 20+ data sources, coordinating the analytics and engineering teams downstream of it — every definition in one place, every consumer aligned.</p>
+    </article>
+    <article class="pillar">
+      <h3>Test</h3>
+      <p>Trust comes from the edge cases. At Evernest, deep-diving unit- and occupant-level exceptions raised occupancy reporting accuracy by 8%. At Nova Credit I'm rebuilding the warehouse in dbt Core, tests first.</p>
+    </article>
+    <article class="pillar">
+      <h3>Ship</h3>
+      <p>A model nobody reads isn't finished. At Oracle I built the SVP reporting layer for Cost of Cloud savings — 12 recurring executive reviews — and turned a full-day MBR data pull into an always-on view.</p>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section reveal">
+  <h2 class="section-title"><span class="mono num">02</span>Experience</h2>
+
+  <ol class="timeline">
+    <li class="card tilt">
+      <div class="card-head">
+        <div>
+          <h3>Nova Credit</h3>
+          <p class="role">Senior Product Analytics Manager</p>
+        </div>
+        <p class="dates mono">Aug 2026 — present</p>
+      </div>
+      <ul>
+        <li>Leading GTM and Finance analytics through ownership of data modeling, data PRDs, and data visualization</li>
+        <li>Rearchitecting the data warehouse from scratch in dbt Core — modeling and testing — with AI-assisted validation to raise development velocity</li>
+        <li>Transforming product launch monitoring from bespoke queries in Grafana to enterprise-grade monitoring &amp; analysis</li>
+      </ul>
+    </li>
+
+    <li class="card tilt">
+      <div class="card-head">
+        <div>
+          <h3>Oracle</h3>
+          <p class="role">Principal Data Technical Program Manager</p>
+        </div>
+        <p class="dates mono">Aug 2025 — Apr 2026</p>
+      </div>
+      <ul>
+        <li>Built end-to-end SVP reporting infrastructure for Cost of Cloud savings, establishing 12 recurring executive reviews</li>
+        <li>Designed scalable data models with dynamic suppression and flagging logic across team datasets</li>
+        <li>Automated the MBR analytics pipeline, reducing a full-day manual data collection process to a readily available view</li>
+      </ul>
+    </li>
+
+    <li class="card tilt">
+      <div class="card-head">
+        <div>
+          <h3>Evernest</h3>
+          <p class="role">Senior Data Analyst</p>
+        </div>
+        <p class="dates mono">Apr 2025 — Aug 2025</p>
+      </div>
+      <ul>
+        <li>Owned and maintained dbt data models for Operations and Sales covering properties managed, leased, and inspected</li>
+        <li>Increased occupancy reporting accuracy by 8% through deep-diving edge cases at the unit and occupant level</li>
+        <li>Modeled a maintenance workforce tracking solution in dbt, improving observability across 30+ technicians</li>
+      </ul>
+    </li>
+
+    <li class="card tilt">
+      <div class="card-head">
+        <div>
+          <h3>Stripe</h3>
+          <p class="role">Senior Data Analyst</p>
+        </div>
+        <p class="dates mono">Feb 2022 — Jan 2025</p>
+      </div>
+      <ul>
+        <li>Created the first Customer Success account health model for 120 strategic accounts using 15+ product &amp; payments KPIs</li>
+        <li>Led the 2025 GTM territory model refactor across 20+ data sources, coordinating analytics &amp; engineering downstreams</li>
+        <li>Redesigned the data methodology for Stripe's Top Users, reducing a 2-month process to a 2-week decision cycle</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3 class="earlier-title">Earlier</h3>
+  <ol class="earlier">
+    <li><span class="co">GoodRx</span><span class="when mono">2020 — 22</span><span class="what">Senior BI Analyst · aggregated revenue KPIs for a $10M+ business; surfaced vendor profitability in LookML, enabling a $200K+ reallocation across 4 territories</span></li>
+    <li><span class="co">IBM</span><span class="when mono">2019 — 20</span><span class="what">Data Analytics Specialist · designed the first SQL data models for sales velocity and enablement metrics</span></li>
+    <li><span class="co">Expedia Group</span><span class="when mono">2015 — 19</span><span class="what">Senior Programmatic Analyst · unified RTB reporting from 9 SSPs into one solution, cutting reporting from 2 days to 2 hours</span></li>
+    <li><span class="co">Facebook</span><span class="when mono">2013 — 15</span><span class="what">Advertising Analyst · managed $11M+ in ad revenue; built 45+ custom audience segments in self-taught SQL</span></li>
+  </ol>
+</section>
+
+<section id="toolkit" class="section reveal">
+  <h2 class="section-title"><span class="mono num">03</span>Toolkit</h2>
+  <dl class="toolkit">
+    <div><dt>Warehouse &amp; SQL</dt><dd>Presto / Trino · Redshift · BigQuery · Databricks · DuckDB</dd></div>
+    <div><dt>Modeling</dt><dd>dbt Core / Cloud · ETL / ELT · Python (pandas, polars)</dd></div>
+    <div><dt>Visualization</dt><dd>Tableau · Apache Superset · Grafana · Looker</dd></div>
+    <div><dt>Platform</dt><dd>AWS · Airflow · GitHub · Jupyter / Deepnote · Salesforce</dd></div>
+  </dl>
+</section>
+
+</main>
+
+<footer class="footer reveal">
+  <div class="footer-inner">
+    <p>Austin, TX · The University of Texas at Austin, BA Economics</p>
+    <nav class="links" aria-label="Contact">
+      <a href="mailto:mo.rizvi@gmail.com">mo.rizvi@gmail.com</a>
+      <a href="https://www.linkedin.com/in/rizvi14" rel="me noopener" target="_blank">LinkedIn</a>
+      <a href="https://github.com/rizvi14" rel="me noopener" target="_blank">GitHub</a>
+    </nav>
+    <p class="mono colophon">Deployed on Render · <a href="https://github.com/rizvi14/render" rel="noopener" target="_blank">source on GitHub</a></p>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
