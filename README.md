@@ -11,11 +11,22 @@ gradient and is otherwise complete.
 ## Files
 
 ```
-index.html   content + import map
-styles.css   tokens (dark-first, light variant), layout, card depth, reveals
-main.js      scroll reveals, card tilt, Three.js DAG
+index.html   content, project tiles, the <dialog> project sheet, import map
+styles.css   tokens (dark-first, light variant), layout, card depth, lineage styles
+main.js      scroll reveals, card tilt, Three.js DAG in the hero
+lineage.js   interactive lineage: SVG layered graph, click-to-trace, deep links
+projects.js  the three project models (nodes, edges, descriptions) — edit this
 render.yaml  Render Blueprint (static, publish dir ".", no build)
 ```
+
+## Editing a project's lineage
+
+Everything about the three projects lives in `projects.js`. Each project has
+`nodes` (`id`, `layer` 0–4, `kind`, `label`, `desc`) and `edges` (`[from, to]`
+pairs of node ids). `highlight` is the node id that gets selected when the
+sheet opens. Layers are `Sources → Staging → Intermediate → Marts → Consumers`;
+column widths follow the longest label. Deep links: `/#nova-credit`,
+`/#oracle`, `/#stripe`.
 
 ## Run locally
 

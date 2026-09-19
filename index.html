@@ -24,17 +24,40 @@
 
 <header id="hero" class="hero">
   <div class="hero-inner">
-    <p class="eyebrow mono">Mohammed Ali Rizvi · Austin, TX</p>
-    <h1>I turn hundreds of bespoke queries into tested data models people trust.</h1>
-    <p class="lede">Analytics engineer at <strong>Nova Credit</strong>. Previously <strong>Oracle</strong> and <strong>Stripe</strong>. Thirteen years of building the model, testing it, and shipping it to the people who make decisions.</p>
-    <nav class="links" aria-label="Contact">
-      <a href="mailto:mo.rizvi@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/rizvi14" rel="me noopener" target="_blank">LinkedIn</a>
-      <a href="https://github.com/rizvi14" rel="me noopener" target="_blank">GitHub</a>
-    </nav>
-    <p class="lineage mono" aria-hidden="true"><span>sources</span><i></i><span>staging</span><i></i><span>marts</span><i></i><span>dashboards</span></p>
+    <div class="hero-copy">
+      <p class="eyebrow mono">Mohammed Ali Rizvi · Austin, TX</p>
+      <h1>I turn hundreds of bespoke queries into tested data models people trust.</h1>
+      <p class="lede">Analytics engineer at <strong>Nova Credit</strong>. Previously <strong>Oracle</strong> and <strong>Stripe</strong>. Thirteen years of building the model, testing it, and shipping it to the people who make decisions.</p>
+      <nav class="links" aria-label="Contact">
+        <a href="mailto:mo.rizvi@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/rizvi14" rel="me noopener" target="_blank">LinkedIn</a>
+        <a href="https://github.com/rizvi14" rel="me noopener" target="_blank">GitHub</a>
+      </nav>
+      <p class="lineage-key mono" aria-hidden="true"><span>sources</span><i></i><span>staging</span><i></i><span>marts</span><i></i><span>dashboards</span></p>
+    </div>
+
+    <div class="projects" aria-label="Projects">
+      <p class="projects-title mono">Three models, click to trace the lineage</p>
+      <a class="tile" href="#nova-credit" data-project="nova-credit">
+        <span class="tile-co">Nova Credit</span>
+        <span class="tile-name">Product launch monitoring</span>
+        <span class="tile-sub">Bespoke Grafana queries → tested dbt models → one monitoring layer</span>
+        <span class="tile-cta mono">Trace lineage →</span>
+      </a>
+      <a class="tile" href="#oracle" data-project="oracle">
+        <span class="tile-co">Oracle</span>
+        <span class="tile-name">Cost of Cloud — SVP reporting</span>
+        <span class="tile-sub">Suppression &amp; flagging rules in PL/SQL → 12 executive reviews</span>
+        <span class="tile-cta mono">Trace lineage →</span>
+      </a>
+      <a class="tile" href="#stripe" data-project="stripe">
+        <span class="tile-co">Stripe</span>
+        <span class="tile-name">Customer health scorecard</span>
+        <span class="tile-sub">15+ KPIs scored monthly across 120 strategic accounts</span>
+        <span class="tile-cta mono">Trace lineage →</span>
+      </a>
+    </div>
   </div>
-  <a class="scroll-cue" href="#thread" aria-label="Scroll to content"><span></span></a>
 </header>
 
 <main>
@@ -68,7 +91,7 @@
           <h3>Nova Credit</h3>
           <p class="role">Senior Product Analytics Manager</p>
         </div>
-        <p class="dates mono">Aug 2026 — present</p>
+        <div class="card-meta"><p class="dates mono">Aug 2026 — present</p><a class="card-link mono" href="#nova-credit" data-project="nova-credit">View model →</a></div>
       </div>
       <ul>
         <li>Leading GTM and Finance analytics through ownership of data modeling, data PRDs, and data visualization</li>
@@ -83,7 +106,7 @@
           <h3>Oracle</h3>
           <p class="role">Principal Data Technical Program Manager</p>
         </div>
-        <p class="dates mono">Aug 2025 — Apr 2026</p>
+        <div class="card-meta"><p class="dates mono">Aug 2025 — Apr 2026</p><a class="card-link mono" href="#oracle" data-project="oracle">View model →</a></div>
       </div>
       <ul>
         <li>Built end-to-end SVP reporting infrastructure for Cost of Cloud savings, establishing 12 recurring executive reviews</li>
@@ -113,7 +136,7 @@
           <h3>Stripe</h3>
           <p class="role">Senior Data Analyst</p>
         </div>
-        <p class="dates mono">Feb 2022 — Jan 2025</p>
+        <div class="card-meta"><p class="dates mono">Feb 2022 — Jan 2025</p><a class="card-link mono" href="#stripe" data-project="stripe">View model →</a></div>
       </div>
       <ul>
         <li>Created the first Customer Success account health model for 120 strategic accounts using 15+ product &amp; payments KPIs</li>
@@ -156,6 +179,28 @@
   </div>
 </footer>
 
+<dialog id="project" class="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-inner" tabindex="-1">
+    <header class="sheet-head">
+      <div>
+        <p class="sheet-company mono"></p>
+        <h2 class="sheet-title" id="sheet-title"></h2>
+        <p class="sheet-dates mono"></p>
+      </div>
+      <nav class="sheet-switch" aria-label="Switch project"></nav>
+      <button type="button" class="sheet-close" aria-label="Close">✕</button>
+    </header>
+    <p class="sheet-summary"></p>
+    <div class="sheet-stack"></div>
+    <div class="sheet-body">
+      <div class="sheet-graph"></div>
+      <p class="graph-hint mono">Scroll sideways to see the full lineage</p>
+      <aside class="sheet-panel"></aside>
+    </div>
+  </div>
+</dialog>
+
 <script type="module" src="main.js"></script>
+<script type="module" src="lineage.js"></script>
 </body>
 </html>
